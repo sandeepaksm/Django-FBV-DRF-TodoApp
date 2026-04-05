@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: django-fbv-todo
-        image: sandeep2862/django-fbv-todo:10
+        image: sandeep2862/django-fbv-todo:11
         ports:
         - containerPort: 8000
