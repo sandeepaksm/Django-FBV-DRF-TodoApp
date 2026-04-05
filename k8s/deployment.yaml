@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: django-fbv-todo
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: django-fbv-todo
+  template:
+    metadata:
+      labels:
+        app: django-fbv-todo
+    spec:
+      containers:
+      - name: django-fbv-todo
+        image: sandeep2862/django-fbv-todo:1
+        ports:
+        - containerPort: 8000
